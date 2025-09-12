@@ -111,7 +111,7 @@ To do :3
 - Make sure the battery is not contacting the processor of the board to avoid heat damage and explosions.
 - Avoid **at all costs** the contact of the watch with water.
 
-**Build at your own risk!**
+We are not responsible for any damage you or your hardware may have. **Build at your own risk!**
 
 ---
 
