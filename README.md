@@ -49,6 +49,7 @@ cd ESPCrapWatch
 ```
 
 3. Configure the project:
+
 Default ESP32:
 ```bash
 idf.py set-target esp32
