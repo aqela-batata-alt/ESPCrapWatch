@@ -54,7 +54,7 @@ espup install
 2. Clone this repository (you sure about this?):
 ```bash
 git clone https://github.com/aqela-batata-alt/ESPCrapWatch.git
-cd ESPCrapWatch
+cd ESPCrapWatch/source/
 ```
 
 2. Set up the ESP environment:
