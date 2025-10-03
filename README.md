@@ -2,6 +2,8 @@
 ESP-Based Smart Crap Watch
 
 [![ESP-IDF](https://img.shields.io/badge/ESP--IDF-v5.0+-purple.svg)](https://docs.espressif.com/projects/esp-idf/en/stable/)
+[![Documentation](https://img.shields.io/badge/docs-esp--rs-brightgreen)](https://esp-rs.github.io/esp-idf-sys/esp_idf_sys/index.html)
+
 
 **The world's most unreliable smartwatch** - because i want
 
@@ -32,49 +34,45 @@ This repository contains everything you need to build your own questionable wear
 ## Getting Started
 
 ### Prerequisites
-- ESP-IDF v5.0 or later
+- Cargo
+- Esp libraries for rust
 - Low expectations
 
 ### Installation
-
-1. Clone this repository (you sure about this?):
+0. Prerequisites:
+```bash
+#rustup install
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+restart your shell
+```bash
+#espup install
+cargo install espup cargo-espflash --lockup
+espup install
+```
+  
+2. Clone this repository (you sure about this?):
 ```bash
 git clone https://github.com/aqela-batata-alt/ESPCrapWatch.git
 cd ESPCrapWatch
 ```
 
-2. Set up the ESP-IDF environment:
+2. Set up the ESP environment:
 ```bash
-. $HOME/esp/esp-idf/export.sh
+source $HOME/export-esp.sh
 ```
 
-3. Configure the project:
 
-Default ESP32:
+3. Build the project:
 ```bash
-idf.py set-target esp32
-idf.py menuconfig
-```
-ESP32 S3:
-```bash
-idf.py set-target esp32
-idf.py menuconfig
+cargo build
 ```
 
-4. Build the project:
+4. Flash and monitor your device:
 ```bash
-idf.py build
+cargo espflash --monitor
 ```
 
-5. Flash to your device:
-```bash
-idf.py -p <Your-Board> flash
-```
-
-6. Monitor the serial output:
-```bash
-idf.py -p <Your-Board> monitor
-```
 
 ## Project Structure
 To do :3
