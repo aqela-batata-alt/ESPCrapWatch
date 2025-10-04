@@ -47,14 +47,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 restart your shell
 ```bash
 #espup install
-cargo install espup cargo-espflash --lockup
+cargo install espup cargo-espflash --locked
 espup install
 ```
   
 2. Clone this repository (you sure about this?):
 ```bash
 git clone https://github.com/aqela-batata-alt/ESPCrapWatch.git
-cd ESPCrapWatch/source/
+cd ESPCrapWatch/source/esp-crap-watch
 ```
 
 2. Set up the ESP environment:
